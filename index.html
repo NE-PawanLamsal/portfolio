@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawan Lamsal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav>
+    <h2 class="logo">Pawan <span>Lamsal</span></h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <img src="/profile.jpeg" class="profile" alt="profile">
+
+    <h1>Hello, I'm <span>Pawan Lamsal</span></h1>
+    <p>Software Engineer | Lecturer | Full-Stack & Mobile Developer</p>
+
+    <div class="social">
+      <a href="https://github.com/NE-PawanLamsal"><i class="fab fa-github"></i></a>
+      <a href="mailto:erpawanlamsal@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/pawan-lamsal-109212104/"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</header>
+
+<section id="experience" class="section">
+  <h2>Work Experience</h2>
+
+  <div class="cards">
+    <div class="card fade-up">
+      <i class="fa fa-chalkboard-user"></i>
+      <h3>Part-Time Lecturer</h3>
+      <p>Institute of Engineering, TU Nepal (2024-2025)</p>
+      <ul>
+        <li>Taught AI, OS, Programming, Computer Graphics</li>
+        <li>Delivered lectures, labs & tutorials</li>
+      </ul>
+    </div>
+
+    <div class="card fade-up">
+      <i class="fa fa-code"></i>
+      <h3>Freelance Web Developer</h3>
+      <p>2021-2023</p>
+      <ul>
+        <li>React, Node, MySQL</li>
+        <li>REST APIs, CI/CD & Agile workflows</li>
+      </ul>
+    </div>
+
+    <div class="card fade-up">
+      <i class="fa fa-mobile-screen"></i>
+      <h3>Freelance Android Developer</h3>
+      <p>2020-2022</p>
+      <ul>
+        <li>Flutter, Laravel, Firebase</li>
+        <li>Real-time apps & admin dashboards</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section alt">
+    <h2>Projects</h2>
+  
+    <div class="cards projects">
+  
+      <div class="project fade-up">
+        <img src="https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&w=600" alt="Unity Game">
+        <h3>Pec Bounce</h3>
+        <a href="https://github.com/NE-PawanLamsal/pecbounce">GitHub →</a>
+      </div>
+  
+      <div class="project fade-up">
+        <img src="https://images.pexels.com/photos/612904/pexels-photo-612904.jpeg?auto=compress&w=600" alt="Hospital App">
+        <h3>DocApp</h3>
+        <a href="https://github.com/NE-PawanLamsal/DocApp">GitHub →</a>
+      </div>
+  
+      <div class="project fade-up">
+        <img src="https://cdn.pixabay.com/photo/2018/01/17/18/46/ballot-3085292_640.jpg" alt="Electronic Voting">
+        <h3>MeroVote</h3>
+        <a href="#">Case Study →</a>
+      </div>
+  
+      <div class="project fade-up">
+        <img src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&w=600" alt="Engineering App">
+        <h3>EasyLab</h3>
+        <a href="https://github.com/NE-PawanLamsal/easylab">GitHub →</a>
+      </div>
+  
+    </div>
+  </section>
+  
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <div class="contact-box fade-up">
+    <p><i class="fa fa-envelope"></i> erpawanlamsal@gmail.com</p>
+    <p><i class="fa fa-phone"></i> +49 17635335083</p>
+    <p><i class="fa fa-location-dot"></i> Hildesheim, Germany</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Pawan Lamsal
+</footer>
+
+<script>
+  // Scroll animations
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
